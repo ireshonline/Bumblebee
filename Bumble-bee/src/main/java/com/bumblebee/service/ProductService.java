@@ -1,8 +1,10 @@
 package com.bumblebee.service;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.bumblebee.dao.ProductManger;
 import com.bumblebee.model.Product;
 
 public class ProductService {
@@ -25,30 +27,32 @@ public class ProductService {
 		
 	}
 	
+	private ProductManger getProductManger() {
+		return new ProductManger();
+	}
+
+	public boolean registerProduct(Product product) throws ClassNotFoundException, SQLException {
+
+		return getProductManger().addProduct(product);
+	}
+
+	public  Product getSpecificProduct(int productId) throws ClassNotFoundException, SQLException {
+
+		return getProductManger().getSpecificProduct(productId);
+	}
+
+
+	public List<Product> getAlLProducts() throws ClassNotFoundException, SQLException{
+		return getProductManger().getAllProducts();
+	}
+
+	public  boolean editProduct(Product product) throws ClassNotFoundException, SQLException {
+
+		return getProductManger().updateProduct(product);
+	}
 	
-
-	public boolean registerProduct(Product product) {
-
-		return false;
-	}
-
-	public  Product getSpecificProduct(int productId) {
-
-		return new Product();
-	}
-
-
-	public List<Product> getAlLProducts(){
-		return new ArrayList<Product>();
-	}
-
-	public  boolean editProduct(Product product) {
-
-		return false;
-	}
-	
-	public boolean deleteTheProduct(int productCode) {
-		return false;
+	public boolean deleteProduct(int productCode) throws ClassNotFoundException, SQLException {
+		return getProductManger().deleteProduct(productCode);
 	}
 	
 	

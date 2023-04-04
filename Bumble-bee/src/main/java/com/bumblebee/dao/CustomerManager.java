@@ -19,14 +19,7 @@ public class CustomerManager {
 		
 
 		public void insertCustomer(Customer customer) throws SQLException, ClassNotFoundException {
-			
-			
-	
-			
-			
-			
-			
-			
+				
 			DbConnector connector = new MySqlConnectorImpl();
 			
 			System.out.println(INSERT_USERS_SQL);

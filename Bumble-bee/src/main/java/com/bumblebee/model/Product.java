@@ -1,5 +1,6 @@
 package com.bumblebee.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Product {
@@ -12,10 +13,10 @@ public class Product {
 	private int qty;
 	private double price;
 	private String description;
-	private Date create;
+	private String create;
 	
 	public Product(int productId, String name, int categoryId, int brandId, int qty, double price, String description,
-			Date create) {
+			String create) {
 		
 		this.productId = productId;
 		this.name = name;
@@ -26,7 +27,16 @@ public class Product {
 		this.description = description;
 		this.create = create;
 	}
-	
+	public Product(String name, int categoryId , int brandId, int qty , double price , String description , String create) {
+		this.name = name;
+		this.categoryId = categoryId;
+		this.brandId = brandId;
+		this.qty = qty;
+		this.price = price;
+		this.description = description;
+		this.create = create;
+		
+	}
 	
 	public Product() {
 
@@ -103,12 +113,12 @@ public class Product {
 	}
 
 
-	public Date getCreate() {
+	public String getCreate() {
 		return create;
 	}
 
 
-	public void setCreate(Date create) {
+	public void setCreate(String create) {
 		this.create = create;
 	}
 	
