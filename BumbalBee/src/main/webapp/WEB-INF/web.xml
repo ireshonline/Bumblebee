@@ -46,6 +46,12 @@
   	<description></description>
   	<servlet-class>com.bumbalbee.controller.SalesContoller</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>admincontroller</servlet-name>
+  	<display-name>admincontroller</display-name>
+  	<description></description>
+  	<servlet-class>com.bumbalbee.controller.AdminController</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>ProductController</servlet-name>
   	<url-pattern>/product_controller</url-pattern>
@@ -77,5 +83,9 @@
   <servlet-mapping>
   	<servlet-name>SalesContoller</servlet-name>
   	<url-pattern>/salescontoller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>admincontroller</servlet-name>
+  	<url-pattern>/admincontroller</url-pattern>
   </servlet-mapping>
 </web-app>

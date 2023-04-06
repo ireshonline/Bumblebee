@@ -78,6 +78,8 @@ public class ProductController extends HttpServlet {
 			boolean result = service.registerProduct(product);
 			if(result) {
 				message = "Product " + productName + " successfully added!";
+				
+				  
 			}
 			else {
 				message = "Product " + productName + " NOT added!!";
@@ -174,7 +176,7 @@ public class ProductController extends HttpServlet {
 		int productId = Integer.parseInt(request.getParameter("productId"));
 
 		try {
-			boolean result = service.deleteTheProduct(productId);
+			boolean result = service.deleteProduct(productId);
 
 			if(result) {
 				message = "Product successfully deleted";

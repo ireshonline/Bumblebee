@@ -15,16 +15,10 @@
 </head>
 <body>
 
-  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-      
-    <div class="container mt-4">
-		<nav class="nav nav-pills flex-column flex-sm-row">
-		  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">All Customers</a>
-		  <a class="flex-sm-fill text-sm-center nav-link border" href="add-customer.jsp">Add Customer</a>
-		  <a class="flex-sm-fill text-sm-center nav-link border" href="update-customer.jsp">Update Customer</a>
-		</nav>
-	</div>
-	
+<div class="row">
+ <div class="col-8 col-md-2">	<jsp:include page="Sidebar_nav.jsp"></jsp:include>
+</div>
+  <div class="col-12 col-md-10">
 	<div class="row align-items-center justify-content-center mt-5">
 		<div class="col-md-9 mx-auto text-center">
 			<p class="text-success">${message}</p>
@@ -70,7 +64,7 @@
 			</table>
 		</div>
 	
-    </main>
+    
 
 
 <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

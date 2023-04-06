@@ -1,8 +1,10 @@
 package com.bumbalbee.service;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.bumbalbee.dao.AdminManager;
 import com.bumbalbee.model.Admin;
 
 public class AdminService {
@@ -22,12 +24,11 @@ public class AdminService {
 		return adminServiceObj;	
 	}
 	
-	public Admin getSpecificAdmin(int adminId) {
-		return new Admin();
+	private AdminManager getAdminManager() {
+		return new AdminManager();
 	}
 	
-	public List<Admin> getAllAdmins(){
-		return new ArrayList<Admin>();
+	public Admin validateAdmin(String email, String password) throws ClassNotFoundException, SQLException {
+		return getAdminManager().validateAdmin(email, password);
 	}
-	
 }

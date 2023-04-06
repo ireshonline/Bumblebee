@@ -8,16 +8,11 @@
 </head>
 <body>
 
-	
-	<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-
-	<div class="container mt-4">
-		<nav class="nav nav-pills flex-column flex-sm-row">
-		  <a class="flex-sm-fill text-sm-center nav-link border" href="product_controller">All Products</a>
-		  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Add Product</a>
-		  <a class="flex-sm-fill text-sm-center nav-link border" href="updateproduct.jsp">Update Product</a>
-		</nav>
-	</div>
+<div class="row">
+ <div class="col-8 col-md-2">	<jsp:include page="Sidebar_nav.jsp"></jsp:include>
+</div>
+  <div class="col-12 col-md-10">
+  
 	
 	<div class="row align-items-center justify-content-center mt-5">
 		<div class="col-md-9 mx-auto text-center">

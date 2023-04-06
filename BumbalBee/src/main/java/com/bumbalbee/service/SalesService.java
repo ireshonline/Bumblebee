@@ -36,7 +36,7 @@ public class SalesService {
 		return false;
 	}
 	
-	public boolean deleteTheSales(int salesId) {
+	public boolean deleteSales(int salesId) {
 		return false;
 	}
 }

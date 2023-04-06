@@ -46,7 +46,7 @@ public class ProductService {
 		return getProductManager().updateProduct(product);
 	}
 	
-	public boolean deleteTheProduct(int productId) throws ClassNotFoundException, SQLException {
+	public boolean deleteProduct(int productId) throws ClassNotFoundException, SQLException {
 		return getProductManager().deleteProduct(productId);
 	}
 }

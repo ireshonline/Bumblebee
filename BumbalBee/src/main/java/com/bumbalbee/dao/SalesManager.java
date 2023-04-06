@@ -20,11 +20,11 @@ public class SalesManager {
 	}
 	
 	
-	public boolean addSales(Sales payment) {
+	public boolean addSales(Sales sales) {
 		return false;
 	}
 	
-	public Sales getSpecificSales(int paymentId) {
+	public Sales getSpecificSales(int salesId) {
 		return new Sales();
 	}
 	
@@ -32,11 +32,11 @@ public class SalesManager {
 		return new ArrayList<Sales>();
 	}
 	
-	public boolean updateSales(Sales payment) {
+	public boolean updateSales(Sales sales) {
 		return false;
 	}
 	
-	public boolean deleteSales(int paymentId) {
+	public boolean deleteSales(int salesId) {
 		return false;
 	}
 }
