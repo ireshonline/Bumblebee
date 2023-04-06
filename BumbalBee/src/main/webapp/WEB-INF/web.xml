@@ -1,0 +1,81 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ProductController</servlet-name>
+  	<display-name>ProductController</display-name>
+  	<description>All the product requests</description>
+  	<servlet-class>com.bumbalbee.controller.ProductController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BrandController</servlet-name>
+  	<display-name>BrandController</display-name>
+  	<description></description>
+  	<servlet-class>com.bumbalbee.controller.BrandController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CategoryController</servlet-name>
+  	<display-name>CategoryController</display-name>
+  	<description></description>
+  	<servlet-class>com.bumbalbee.controller.CategoryController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CategoryController1</servlet-name>
+  	<display-name>CategoryController1</display-name>
+  	<description></description>
+  	<servlet-class>com.bumbalbee.controller.CategoryController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CustomerController</servlet-name>
+  	<display-name>CustomerController</display-name>
+  	<description></description>
+  	<servlet-class>com.bumbalbee.controller.CustomerController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SalesController</servlet-name>
+  	<display-name>SalesController</display-name>
+  	<description></description>
+  	<servlet-class>com.bumbalbee.controller.SalesController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SalesContoller</servlet-name>
+  	<display-name>SalesContoller</display-name>
+  	<description></description>
+  	<servlet-class>com.bumbalbee.controller.SalesContoller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProductController</servlet-name>
+  	<url-pattern>/product_controller</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+  	<servlet-name>ProductController</servlet-name>
+  	<url-pattern>/allproducts</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BrandController</servlet-name>
+  	<url-pattern>/brandcontroller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CategoryController</servlet-name>
+  	<url-pattern>/CategoryController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CategoryController1</servlet-name>
+  	<url-pattern>/categorycontroller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CustomerController</servlet-name>
+  	<url-pattern>/customercontroller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SalesController</servlet-name>
+  	<url-pattern>/salescontroller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SalesContoller</servlet-name>
+  	<url-pattern>/salescontoller</url-pattern>
+  </servlet-mapping>
+</web-app>
